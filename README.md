@@ -14,3 +14,7 @@ I wrote this code that uses the BeautifulSoup package to edit the XML code that 
 This is a generic version of some code I wrote to change specific lines of code in R scripts for multiple entities. Standard scripts are used for each entity and saved in separate folders. Because there are entity-specific adjustments added to each R script, there are slight deviations from the standard template for each entity. I needed to find a way to edit standard code across the multiple files without removing the entity-specific adjustments. We additionally need to track these updates on git, and the process of doing that for each individual file was long and tedious.
 
 I wrote this code that replaces specified lines in the R script with the updated code for each entity. I track the success of each update to make sure that the updated file was edited and saved correctly. Finally, this code updates the edited script in our GitLab repository for each entity. This saves hours of work and reduces the chances of human error everytime code updates need to be implemented.
+
+**web_scraping.py**
+
+This code uses the BeautifulSoup package to scrape the last statements of executed inmates in Texas. It saves their first and last name from the main page, then goes into the link for each of their statements and scrapes that information as well. This data was scraped to build a word cloud, to visualize the most prevalent words used in these last statements. This project was completed for a data visualization class.
